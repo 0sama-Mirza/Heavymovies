@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Thriller</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .btn {
+        background-color: hsl(0, 100%, 40%);
+        border: none;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      .btn-primary {
+        border-radius: 12px;
+      }
+
+      figcaption {
+        background-color: black;
+        color: white;
+        font-style: italic;
+        padding: 2px;
+        text-align: center;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+      }
+
+      /* Style the header */
+      header {
+        background-color: hsl(240, 84%, 10%);
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 100px;
+        height: 300px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 100px;
+        width: 100%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+      }
+      /* Style the footer */
+      footer {
+        background-color: hsl(240, 84%, 10%);
+        padding: 10px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: verdana;
+        }
+        #abc {
+          width: 100%;
+          height: 30px;
+          background-image: url(img2.jpg);
+          background-size: cover;
+        }
+        nav {
+          width: 100%;
+          height: 20px;
+          background-color: transparent;
+          line-height: 50px;
+        }
+        nav ul {
+          float: left;
+          margin-right: 10px;
+        }
+        nav ul li {
+          list-style-type: none;
+          display: inline-block;
+          transition: 0.7s all;
+        }
+        nav ul li:hover {
+          background-color: #777;
+        }
+        nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          padding: 5px;
+        }
+        a {
+          font-size: 20px;
+        }
+
+        #navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: lightslategray;
+          min-width: 160px;
+          box-shadow: bisque;
+          padding: 12px 16px;
+          z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+      </style>
+
+      <div style="text-align: left">
+        <img src="../../images/logo.png" width="50" alt="My Image" />
+        Heavymovies
+      </div>
+      <div id="abc">
+        <nav>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="About us.html">About-us</a></li>
+            <li><a href="login.html">Sign-in</a></li>
+            <li>
+              <div class="dropdown">
+                <a class="dropbtn"
+                  >Catagories
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                  <a href="All Categories.html">Show All</a>
+                  <a href="Action.html">Action</a>
+                  <a href="Adventure.html">Adventure</a>
+                  <a href="Thriller.html">Thriller</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <head>
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+
+          body {
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+          }
+
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -5px;
+          }
+
+          .column {
+            flex: 1 1 25%;
+            padding: 5px;
+          }
+
+          .column img {
+            width: 100%;
+            height: 280px; /* Fixed height for all images */
+            object-fit: cover;
+          }
+
+          .column figcaption {
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+          }
+
+          .column .btn {
+            display: block;
+            width: 100%;
+            margin: 10px 0 0;
+            padding: 10px;
+            text-align: center;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+
+          .column .btn:hover {
+            background: #0056b3;
+          }
+
+          h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: white;
+          }
+
+          hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 20px 0;
+          }
+
+          @media screen and (max-width: 768px) {
+            .column {
+              flex: 1 1 50%;
+            }
+          }
+
+          @media screen and (max-width: 480px) {
+            .column {
+              flex: 1 1 100%;
+            }
+          }
+          img {
+            transition: all 1s;
+          }
+          img:hover {
+            transform: scale(1.1);
+          }
+        </style>
+      </head>
+      <body>
+        <br />
+        <h1 style="color: #f2f2f2">&nbsp;Adventure</h1>
+        <br />
+
+        <div class="row">
+          <div class="column">
+            <a href="ww84.html">
+              <img
+                src="../../images/ww84.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Wonder Women 1984 - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="Venom.html">
+              <img
+                src="../../images/venom.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Venom - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="panther.html">
+              <img
+                src="../../images/panther.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Black Panther- 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="shang-chi.html">
+              <img
+                src="../../images/shang-chi.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Shang Chi - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <hr />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+        <div class="row">
+          <div class="column">
+            <a href="matrix.html">
+              <img
+                src="../../images/matrix.jpg"
+                alt="Snow"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Matrix - 2010</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="Dune.html">
+              <img
+                src="../../images/dune.jpg"
+                alt="Forest"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Dune - 2021</figcaption>
+            <div class="container mt-3">
+              <button type="button" class="btn btn-primary">Watch</button>
+            </div>
+          </div>
+          <div class="column">
+            <a href="1917.html">
+              <img
+                src="../../images/1917.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>1917 - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="Red Notice.html">
+              <img
+                src="../../images/red-notice.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Red Notice - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <hr />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+        <div class="row">
+          <div class="column">
+            <a href="casino-royale.html">
+              <img
+                src="../../images/casino-royale.jpg"
+                alt="Snow"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Casino Royale - 2018</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+
+          <div class="column">
+            <a href="captain-marvel.html">
+              <img
+                src="../../images/captain-marvel.jpg"
+                alt="Forest"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Captian Marvel - 2017</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="black-adam(2022).html">
+              <img
+                src="../../images/black-adam.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Black Adam - 2022</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="LOTR.html">
+              <img
+                src="../../images/LOTR.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Lords of the rings - 2005</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <hr />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+        <div class="row">
+          <div class="column">
+            <a href="gladiator.html">
+              <img
+                src="../../images/gladiator.jpg"
+                alt="Snow"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Gladiator - 2015</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="saving-private-ryan.html">
+              <img
+                src="../../images//saving-private-ryan.jpg"
+                alt="Forest"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Saving Private Ryan - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="1917.html">
+              <img
+                src="../../images/1917.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>1917 - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="Dune.html">
+              <img
+                src="../../images/dune.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>dune - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <hr />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+        <div class="row">
+          <div class="column">
+            <a href="Spiderman.html">
+              <img
+                src="../../images/spider-men.jpg"
+                alt="Snow"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Spider Men - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="dark-knight.html">
+              <img
+                src="../../images/dark-knight - Copy.jpg"
+                alt="Forest"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Batman:dark knight rises - 2012</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="gladiator.html">
+              <img
+                src="../../images/gladiator.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Gladiator - 2015</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="saving-private-ryan.html">
+              <img
+                src="../../images/saving-private-ryan.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Saving Private Ryan - 1999</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <hr />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+        <div class="row">
+          <div class="column">
+            <a href="Red Notice (2021).html">
+              <img
+                src="../../images/red-notice.jpg"
+                alt="Snow"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Red Notice - 2020</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="Eternals.html">
+              <img
+                src="../../images/eternals.jpg"
+                alt="Forest"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Eternals - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="planet.html">
+              <img
+                src="../../images/planet.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Planet Earth 2 - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+          <div class="column">
+            <a href="Venom.html">
+              <img
+                src="../../images/venom.jpg"
+                alt="Mountains"
+                style="width: 100%; height: 280px"
+              />
+            </a>
+            <figcaption>Venom - 2021</figcaption>
+            <center>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary">Watch</button>
+              </div>
+            </center>
+          </div>
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <hr />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      </body>
+
+      <script>
+        document.querySelectorAll(".column").forEach((column) => {
+          const link = column.querySelector("a");
+          const button = column.querySelector(".btn");
+          if (link && button) {
+            button.onclick = () => {
+              window.location.href = link.href;
+            };
+          }
+        });
+      </script>
+    </section>
+
+    <footer>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <style>
+          .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 70px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 2px;
+          }
+
+          .fa:hover {
+            opacity: 0.7;
+          }
+
+          .fa-facebook {
+            background: #3b5998;
+            color: white;
+          }
+
+          .fa-twitter {
+            background: #55acee;
+            color: white;
+          }
+
+          .fa-google {
+            background: #dd4b39;
+            color: white;
+          }
+
+          .fa-linkedin {
+            background: #007bb5;
+            color: white;
+          }
+
+          .fa-youtube {
+            background: #bb0000;
+            color: white;
+          }
+
+          .fa-instagram {
+            background: #125688;
+            color: white;
+          }
+        </style>
+      </head>
+      <body>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.google.com/" class="fa fa-google"></a>
+        <a href="https://pk.linkedin.com/" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      </body>
+    </footer>
+  </body>
+</html>

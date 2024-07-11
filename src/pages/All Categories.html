@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>All Categories</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+.btn {
+  background-color: hsl(240, 20%, 45%);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-primary {border-radius: 12px;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  
+}
+
+/* Style the header */
+header {
+  background-color: hsl(240, 84%, 10%);
+    height: 100%;
+  background-size: cover;
+    background-repeat: no-repeat;
+  padding: 100px;
+  height: 300px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  
+}
+
+/* Style the footer */
+footer {
+  background-color: hsl(240, 84%, 10%);
+  text-align: center;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 100px;
+  width: 100%;
+  background-color: black;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+		font-family:verdana;
+	  }
+	  #abc{
+		width:100%;
+		height: 30px;
+		background-image: url(img2.jpg);
+		background-size: cover;
+	  }
+	  nav{
+		width: 100%;
+		height: 20px;
+		background-color:transparent;
+		line-height: 50px;
+	  }
+	  nav ul{
+		float: left;
+		margin-right: 10px;
+	  }
+	  nav ul li{
+		list-style-type: none;
+		display: inline-block;
+		transition: 0.7s all;
+	  }
+	  nav ul li:hover{
+		background-color:#777;
+	  }
+	  nav ul li a{
+		text-decoration: none;
+		color: #fff;
+		padding: 5px;
+	  }
+	  a {
+  font-size: 20px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:lightslategray;
+  min-width: 160px;
+  box-shadow:bisque;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
+<div style="text-align: left;"><img src="../../images/logo.png" width="50" alt="My Image" />  Heavymovies</div>
+<div id="abc">
+    <nav>
+		
+				
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="About us.html">About-us</a></li>
+        <li><a href="login.html">Sign-in</a></li>
+        <li><div class="dropdown">
+          <a class="dropbtn">Catagories 
+                    <i class="fa fa-caret-down"></i>
+                    </a>
+          <div class="dropdown-content">
+              <a href="All Categories.html">Show All</a>
+                      <a href="Action.html">Action</a>
+            <a href="Adventure.html">Adventure</a>
+            <a href="Thriller.html">Thriller</a>
+          </div>
+          </div>
+                    </li>
+  
+      </ul>
+    </nav>
+</div>	
+</header>
+
+<section> 
+   <head><style>
+        * {
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;
+         }
+
+         body {
+           background: black;
+         }
+
+	.container {
+           display: flex;
+           justify-content: center;
+         }
+
+        .card {
+          background: white;
+          width: 450px;
+          height:750px;
+          margin: 30px;
+          border-radius: 15px;
+           }
+
+        .card-image {
+            background-color: hsl(0, 0%, 65%);
+            background-size: cover;
+            height: 490px;
+            margin-bottom: 16px; 
+            border-radius: 15px 15px 0 0;
+             }
+       
+	</style>  
+</head>
+<body>
+<br>
+<h1 style="color: #f2f2f2">&nbsp;All Categories</h1>
+	<section class="container">
+           <div class="card">
+           <div class="card-image"> <img src="../../images/dark-knight.jpg" alt="dark" style="width:100%; height:100%;"></div>
+             <h2 align="center"><b>Dark Knight (2008)</b></h2>
+             <p align="center">With the help of allies Lt. Jim Gordon and DA Harvey Dent, 
+               Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. 
+               But when a vile young criminal calling himself the Joker suddenly throws the town into chaos, 
+               the caped Crusader begins to tread a fine line between heroism and vigilantism.</p> 
+               <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='dark-knight.html';">Watch Now</button></div>
+             </div>
+          
+          <div class="card">
+             <div class="card-image"> <img src="../../images/endgame.jpg" alt="endgame" style="width:100%; height:100%;"></div>
+               <h2 align="center"><b>Avengers: Endgame (2019)</b></h2>
+               <p align="center">After half of all life is snapped away by Thanos, 
+               the Avengers are left scattered and divided. Now with a way to reverse the damage, 
+               the Avengers and their allies must assemble once more and 
+               learn to put differences aside in order to work together and set things right.</p> 
+               <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='Spiderman.html';">Watch Now</button></div>
+             </div>
+	  </section>
+
+	<section class="container">
+           <div class="card">
+             <div class="card-image"><img src="../../images/red-notice.jpg" alt="notice" style="width:100%; height:100%;"></div>
+             <h2 align="center"><b>Red Notice (2021)</b></h2>
+               <p align="center">In the world of international crime, 
+                 an Interpol agent attempts to hunt down and capture the world's most wanted art thief.
+                 The high-flying adventure that ensues takes the trio around the world, across the dance floor, trapped in a 
+                 secluded prison, into the jungle and, worst of all for them, constantly into each other's company. 
+                 It seems, as a series of double-crosses ensue</p> 
+              <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='Red Notice (2021).html';">Watch Now</button></div>
+             </div>
+          
+          <div class="card">
+             <div class="card-image"><img src="../../images/John-Wick-3.jpg" alt="wick" style="width:100%; height:100%;"></div>
+            <h2 align="center"><b>John Wick: Chapter 3 (2019)</b></h2>
+               <p align="center">After gunning down a member of the High Table 
+                --the shadowy international assassin's guild 
+                -- legendary hit man John Wick finds himself stripped of the organization's protective services. 
+                  Now stuck with a $14 million bounty on his head, Wick must fight his way 
+                  through the streets of New York as he becomes the target of the world's most ruthless killers.</p> 
+              <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='John.html';">Watch Now</button></div>
+             </div>
+	  </section>
+    
+
+	<section class="container">
+           <div class="card">
+             <div class="card-image"><img src="../../images/spider-men.jpg" alt="spider" style="width:100%; height:100%;"></div>
+             <h2 align="center"><b>Spider Man (2017)</b></h2>
+               <p align="center">Thrilled by avengers, young Peter Parker returns home to live with his Aunt May. 
+               Under the watchful eye of mentor Tony Stark,Peter starts to embrace his newfound identity as Spider-Man. 
+               He tries to return to his normal daily routine distracted by thoughts of proving himself
+               to be more than just a friendly neighborhood superhero.</p> 
+              <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='Spiderman.html';">Watch Now</button></div>
+             </div>
+          
+          <div class="card">
+             <div class="card-image"><img src="../../images/captain-marvel.jpg" alt="captain" style="width:100%; height:100%;"></div>
+             <h2 align="center"><b>Captain Marvel (2019)</b></h2>
+               <p align="center">Captain Marvel is an extraterrestrial Kree warrior who finds herself caught in the middle 
+               of an intergalactic battle between her people and the Skrulls.She keeps having memories of life as U.S. Air Force pilot.  
+               With help from Nick Fury, Captain Marvel tries to uncover the secrets of her past while harnessing her special superpowers 
+               to end the war with the evil Skrulls.</p> 
+              <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='captain-marvel.html';">Watch Now</button></div>
+             </div>
+	  </section>
+          
+	<section class="container">
+           <div class="card">
+             <div class="card-image"><img src="../../images/black-adam.jpg" alt="blackadam" style="width:100%; height:100%;"></div>
+             <h2 align="center"><b>Black Adam (2022)</b></h2>
+               <p align="center">In ancient Kahndaq, Teth Adam was bestowed the powers. He was imprisoned, becoming Black Adam. 
+               Nearly 5,000 years have passed, and he has gone from man to myth to legend. Now free, is challenged by modern-day 
+               heroes who form the Justice Society: Hawkman, Dr. Fate, Atom Smasher and Cyclone.</p> 
+              <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='black-adam(2022).html';">Watch Now</button></div>
+             </div>
+          
+          <div class="card">
+             <div class="card-image"><img src="../../images/venom.jpg" alt="venom" style="width:100%; height:100%;"></div>
+             <h2 align="center"><b>Venom (2018)</b></h2>
+               <p align="center">Journalist Eddie Brock is trying to take down Carlton Drake, While investigating one of Drake's experiments, 
+               Eddie's body merges with the alien Venom leaving him with superhuman strength and power. 
+               Twisted, dark and fueled by rage, Venom tries to control the new and dangerous abilities that Eddie finds so intoxicating.</p> 
+              <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='Venom.html';">Watch Now</button></div>
+             </div>
+	  </section>
+      
+	<section class="container">
+           <div class="card">
+              <div class="card-image"><img src="../../images/dune.jpg" alt="dune" style="width:100%; height:100%;"></div>
+             <h2 align="center"><b>Dune (2021)</b></h2>
+               <p align="center">Paul Atreides, a brilliant and gifted young man travel to the most dangerous
+               planet in the universe to ensure the future of his family and his people. 
+               As malevolent forces explode into conflict over the planet's exclusive supply of the most precious 
+               resource in existence, only those who can conquer their own fear will survive.</p> 
+              <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='Dune.html';">Watch Now</button></div>
+             </div>
+
+             <div class="card">
+              <div class="card-image"><img src="../../images/eternals.jpg" alt="eternals" style="width:100%; height:100%;"></div>
+             <h2 align="center"><b>Eternals (2021)</b></h2>
+               <p align="center">The Eternals, a race of immortal beings with superhuman powers who have secretly 
+               lived on Earth for thousands of years, reunite to battle the evil Deviants.The humanoid race of powerful Eternals are
+               awaken in their spaceship by their creator Arishem and unleashed to destroy the Deviants with their abilities. </p> 
+              <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='Eternals (2021).html';">Watch Now</button></div>
+             </div>
+	  </section>
+
+       <section class="container">
+           <div class="card">
+              <div class="card-image"><img src="../../images/planet.jpg" alt="planet" style="width:100%; height:100%;"></div>
+             <h2 align="center"><b>Planet Earth II (2016)</b></h2>
+               <p align="center">Planet Earth II is a show about islands, and bears, and glass frogs, 
+               and the leopards that live in Mumbai, and, in one astonishingly funny moment, the courtship dance of bower birds.
+               The wildlife documentary series with David Attenborough continues with a unique and intimate glimpse into 
+               secretive lives of mountain-dwelling animals.</p> 
+              <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='planet.html';">Watch Now</button></div>
+             </div>
+
+             <div class="card">
+              <div class="card-image"><img src="../../images/interstaller.jpg" alt="interstallet" style="width:100%; height:100%;"></div>
+             <h2 align="center"><b>Interstaller (2014)</b></h2>
+               <p align="center">In Earth's future, Professor Brand, a brilliant NASA physicist, 
+               is working on plans to save mankind by Earth's population to a new home via a wormhole. 
+               But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through across 
+               the galaxy to find out which of three planets could be mankind's new home.</p> 
+              <div class="container mt-3">
+         <button type="button" class="btn btn-primary" onclick="window.location.href='Interstaller (2014).html';">Watch Now</button></div>
+             </div>
+	  </section>
+ </body>
+</section>
+
+<footer>
+<article>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://pk.linkedin.com/" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>  
+</body>  
+
+</article>
+</footer>
+</body>
+</html>

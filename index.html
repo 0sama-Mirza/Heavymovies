@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Heavymovies</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+      }
+
+      /* Style the header */
+      header {
+        background-image: url(images/John-Wick-3.jpg);
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 100px;
+        height: 700px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 100px;
+        width: 100%;
+        background-color: #041d34;
+        color: white;
+        /* only for monstration, should be removed */
+      }
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: verdana;
+        }
+        #abc {
+          width: 100%;
+          height: 30px;
+          background-image: url(images/img2.jpg);
+          background-size: cover;
+        }
+        nav {
+          width: 100%;
+          height: 20px;
+          background-color: transparent;
+          line-height: 50px;
+        }
+        nav ul {
+          float: left;
+          margin-right: 10px;
+        }
+        nav ul li {
+          list-style-type: none;
+          display: inline-block;
+          transition: 0.7s all;
+        }
+        nav ul li:hover {
+          background-color: #777;
+        }
+        nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          padding: 5px;
+        }
+        a {
+          font-size: 20px;
+        }
+
+        #navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: lightslategray;
+          min-width: 160px;
+          box-shadow: bisque;
+          padding: 12px 16px;
+          z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+      </style>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <style>
+          body {
+            font-family: Arial;
+          }
+
+          * {
+            box-sizing: border-box;
+          }
+
+          form.example {
+            display: flex;
+            position: relative;
+            top: 20px;
+            left: 80%;
+            max-width: 300px;
+          }
+
+          form.example input[type="text"] {
+            width: calc(
+              100% - 40px
+            ); /* Adjust width to leave space for button */
+            padding: 10px;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.5); /* Set transparency */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Set border transparency */
+            color: white; /* Text color */
+          }
+
+          form.example button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 40px; /* Set a fixed width for the button */
+            border: none;
+            background: rgba(255, 255, 255, 0.5); /* Set transparency */
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          form.example button:hover {
+            background: rgba(
+              255,
+              255,
+              255,
+              0.7
+            ); /* Slightly less transparent on hover */
+          }
+
+          form.example button i {
+            color: white; /* Icon color */
+          }
+
+          form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+        </style>
+      </head>
+      <body>
+        <form
+          class="example"
+          style="position: relative; top: 20px; left: 80%; max-width: 24%"
+        >
+          <input
+            type="text"
+            id="ThisThing"
+            list="input"
+            placeholder="Search.."
+            onchange="doit()"
+            style="
+              width: calc(100% - 40px);
+              padding: 0px;
+              box-sizing: border-box;
+              background: rgba(255, 255, 255, 0.5);
+              border: 1px solid rgba(255, 255, 255, 0.5);
+              color: white;
+            "
+          />
+          <button
+            type="submit"
+            style="
+              position: absolute;
+              right: 0;
+              top: 0;
+              height: 100%;
+              width: 40px;
+              border: none;
+              background: rgba(255, 255, 255, 0.5);
+            "
+          >
+            <i class="fa fa-search" style="color: white"></i>
+          </button>
+          <datalist id="input">
+            <option value="John Wick">John-Wick-3</option>
+            <option value="Matrix">Matrix(2010)</option>
+            <option value="Dune">Dune(2021)</option>
+            <option value="1917">1917(2019)</option>
+            <option value="Wonder Women">Wonder Women(1984-2021)</option>
+            <option value="Venom">Venom(2021)</option>
+            <option value="Casino Royale">Casino Royale(2018)</option>
+            <option value="Captian Marvel">Captian Marvel(2017)</option>
+            <option value="Black Adam">Black Adam(2022)</option>
+            <option value="Black Panter">Black Panter(2021)</option>
+            <option value="Shang Chi">Shang Chi(2021)</option>
+            <option value="Red Notice">Red Notice(2020)</option>
+            <option value="Eternals">Eternals(2021)</option>
+            <option value="Planet Earth 2">Planet Earth 2(2021)</option>
+            <option value="Saving Pirate Ryan">Saving Pirate Ryan(1999)</option>
+            <option value="Spider Man">Spider Man(2021)</option>
+            <option value="Batman:Dark Knight Rises">
+              Batman:Dark Knight Rises(2012)
+            </option>
+            <option value="Gladiator">Gladiator(2015)</option>
+            <option value="Lords Of The Rings">Lords Of The Rings(2005)</option>
+            <option value="Interstaller">Interstaller(2021)</option>
+          </datalist>
+        </form>
+      </body>
+      <div style="text-align: left">
+        <img src="images/logo.png" width="50" alt="My Image" /> Heavymovies
+      </div>
+      <div id="abc">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="src/pages/About us.html">About-us</a></li>
+            <li><a href="src/pages/login.html">Sign-in</a></li>
+            <li>
+              <div class="dropdown">
+                <a class="dropbtn"
+                  >Catagories
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                  <a href="src/pages/All Categories.html">ShowAll</a>
+                  <a href="src/pages/Action.html">Action</a>
+                  <a href="src/pages/Adventure.html">Adventure</a>
+                  <a href="src/pages/Thriller.html">Thriller</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 style="position: relative; top: 150px; text-align: left">
+        John-Wick-3
+      </h1>
+      <div
+        style="
+          position: relative;
+          top: 154px;
+          text-align: left;
+          font-size: medium;
+        "
+      >
+        In this story a secret organization turns against there most dangerous
+        special ops
+      </div>
+      <div
+        style="
+          position: relative;
+          top: 154px;
+          text-align: left;
+          font-size: medium;
+        "
+      >
+        personal and attempt to kill him but somehow he survives
+      </div>
+    </header>
+
+    <section>
+      <article>
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -5px;
+          }
+
+          .column {
+            flex: 1 1 20%; /* This allows the columns to wrap and take full width on smaller screens */
+            padding: 5px;
+          }
+
+          .column img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+          }
+
+          .column figcaption {
+            text-align: center;
+            margin-top: 5px;
+          }
+
+          /* Clearfix (clear floats) */
+          .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+
+          h1 {
+            text-align: center;
+            margin: 20px 0;
+          }
+
+          hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 20px 0;
+          }
+
+          @media screen and (max-width: 768px) {
+            .column {
+              flex: 1 1 50%; /* Columns take up 50% of the row */
+            }
+          }
+
+          @media screen and (max-width: 480px) {
+            .column {
+              flex: 1 1 100%; /* Columns take up 100% of the row */
+            }
+          }
+          img {
+            transition: all 1s;
+          }
+          img:hover {
+            transform: scale(1.1);
+          }
+        </style>
+        <h1>Recently Added</h1>
+        <div class="row">
+          <div class="column">
+            <a href="src/pages/matrix.html">
+              <img src="images/matrix.jpg" alt="Matrix" />
+            </a>
+            <figcaption>Matrix - 2010</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/Dune.html">
+              <img src="images/dune.jpg" alt="Dune" />
+            </a>
+            <figcaption>Dune - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/1917(2021).html">
+              <img src="images/1917.jpg" alt="1917" />
+            </a>
+            <figcaption>1917 - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/ww84.html">
+              <img src="images/ww84.jpg" alt="Wonder Woman" />
+            </a>
+            <figcaption>Wonder Woman 1984 - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/Venom.html">
+              <img src="images/venom.jpg" alt="Venom" />
+            </a>
+            <figcaption>Venom - 2021</figcaption>
+          </div>
+        </div>
+
+        <hr />
+
+        <h1>Most Viewed</h1>
+        <div class="row">
+          <div class="column">
+            <a href="src/pages/casino-royale.html">
+              <img src="images/casino-royale.jpg" alt="Casino Royale" />
+            </a>
+            <figcaption>Casino Royale - 2018</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/captain-marvel.html">
+              <img src="images/captain-marvel.jpg" alt="Captain Marvel" />
+            </a>
+            <figcaption>Captain Marvel - 2017</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/black-adam(2022).html">
+              <img src="images/black-adam.jpg" alt="Black Adam" />
+            </a>
+            <figcaption>Black Adam - 2022</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/panther.html">
+              <img src="images/panther.jpg" alt="Black Panther" />
+            </a>
+            <figcaption>Black Panther - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/shang-chi.html">
+              <img src="images/shang-chi.jpg" alt="Shang Chi" />
+            </a>
+            <figcaption>Shang Chi - 2021</figcaption>
+          </div>
+        </div>
+
+        <hr />
+
+        <h1>Action</h1>
+        <div class="row">
+          <div class="column">
+            <a href="src/pages/Red Notice (2021).html">
+              <img src="images/red-notice.jpg" alt="Red Notice" />
+            </a>
+            <figcaption>Red Notice - 2020</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/Eternals.html">
+              <img src="images/eternals.jpg" alt="Eternals" />
+            </a>
+            <figcaption>Eternals - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/planet.html">
+              <img src="images/planet.jpg" alt="Planet Earth 2" />
+            </a>
+            <figcaption>Planet Earth 2 - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/Dune.html">
+              <img src="images/dune.jpg" alt="Dune" />
+            </a>
+            <figcaption>Dune - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/saving-private-ryan.html">
+              <img
+                src="images/saving-private-ryan.jpg"
+                alt="Saving Private Ryan"
+              />
+            </a>
+            <figcaption>Saving Private Ryan - 1999</figcaption>
+          </div>
+        </div>
+
+        <hr />
+
+        <h1>Adventure</h1>
+        <div class="row">
+          <div class="column">
+            <a href="src/pages/Spiderman.html">
+              <img src="images/spider-men.jpg" alt="Spider Man" />
+            </a>
+            <figcaption>Spider Man - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/dark-knight.html">
+              <img
+                src="images/dark-knight - Copy.jpg"
+                alt="Batman: Dark Knight Rises"
+              />
+            </a>
+            <figcaption>Batman: Dark Knight Rises - 2012</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/gladiator.html">
+              <img src="images/gladiator.jpg" alt="Gladiator" />
+            </a>
+            <figcaption>Gladiator - 2015</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/Venom.html">
+              <img src="images/venom.jpg" alt="Venom" />
+            </a>
+            <figcaption>Venom - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/LOTR.html">
+              <img src="images/LOTR.jpg" alt="Lords of the Rings" />
+            </a>
+            <figcaption>Lords of the Rings - 2005</figcaption>
+          </div>
+        </div>
+
+        <hr />
+
+        <h1>History</h1>
+        <div class="row">
+          <div class="column">
+            <a href="src/pages/gladiator.html">
+              <img src="images/gladiator.jpg" alt="Gladiator" />
+            </a>
+            <figcaption>Gladiator - 2015</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/saving-private-ryan.html">
+              <img
+                src="images/saving-private-ryan.jpg"
+                alt="Saving Private Ryan"
+              />
+            </a>
+            <figcaption>Saving Private Ryan - 1999</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/1917(2021).html">
+              <img src="images/1917.jpg" alt="1917" />
+            </a>
+            <figcaption>1917 - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/Red Notice (2021).html">
+              <img src="images/red-notice.jpg" alt="Red Notice" />
+            </a>
+            <figcaption>Red Notice - 2021</figcaption>
+          </div>
+          <div class="column">
+            <a href="src/pages/Interstaller.html">
+              <img src="images/interstaller.jpg" alt="Interstellar" />
+            </a>
+            <figcaption>Interstellar - 2021</figcaption>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <article>
+      <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+        <div class="container">
+          <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">Next</a></li>
+          </ul>
+        </div>
+      </body>
+    </article>
+
+    <footer>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <style>
+          .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 70px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 2px;
+          }
+
+          .fa:hover {
+            opacity: 0.7;
+          }
+
+          .fa-facebook {
+            background: #3b5998;
+            color: white;
+          }
+
+          .fa-twitter {
+            background: #55acee;
+            color: white;
+          }
+
+          .fa-google {
+            background: #dd4b39;
+            color: white;
+          }
+
+          .fa-linkedin {
+            background: #007bb5;
+            color: white;
+          }
+
+          .fa-youtube {
+            background: #bb0000;
+            color: white;
+          }
+
+          .fa-instagram {
+            background: #125688;
+            color: white;
+          }
+        </style>
+      </head>
+      <body>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.google.com/" class="fa fa-google"></a>
+        <a href="https://pk.linkedin.com/" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      </body>
+    </footer>
+  </body>
+  <script src="src/script/Search.js"></script>
+</html>
