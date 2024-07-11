@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "movie.mp4",
     "hahaha.mp4",
     "Video by sxltafa [CpKU1g2DrHw].mp4",
-    "simplescreenrecorder-2021-05-23_20.12.19.mp4",
+    "simplescreenrecorder.mp4",
     "Farid-Bhai-Phone.mp4",
   ];
 
@@ -18,10 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (videoContainer) {
     videoContainer.innerHTML = `
-      <video class="solid" width="400" controls>
+      <video id="videoPlayer" class="solid" width="400" controls>
         <source src="../../videos/${selectedVideo}" type="video/mp4" />
       </video>
     `;
+
+    const videoPlayer = document.getElementById("videoPlayer");
+
+    videoPlayer.addEventListener("loadedmetadata", function () {
+      videoPlayer.currentTime = videoPlayer.duration;
+    });
   } else {
     console.error("Video container not found!"); // Error log
   }
